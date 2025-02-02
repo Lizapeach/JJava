@@ -1,3 +1,4 @@
+// задание 4
 import java.util.Scanner;
 
 public class Logistics_maximin {
