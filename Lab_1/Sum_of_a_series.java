@@ -1,3 +1,4 @@
+// задание 2
 import java.util.Scanner;
 
 public class Sum_of_a_series {
