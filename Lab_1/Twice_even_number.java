@@ -1,3 +1,4 @@
+//задание 5
 import java.util.Scanner;
 public class Twice_even_number {
     public static void main(String[] args) {
