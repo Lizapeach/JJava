@@ -1,3 +1,4 @@
+//задание 1
 import java.util.Scanner;
 
 public class Collatz_hypothesis {
