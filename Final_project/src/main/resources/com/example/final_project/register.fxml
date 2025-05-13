@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.final_project.RegisterController"
+      stylesheets="@styles.css">
+
+    <Label text="Регистрация"/>
+
+    <TextField fx:id="usernameField" promptText="Логин" maxWidth="200"/>
+    <PasswordField fx:id="passwordField" promptText="Пароль" maxWidth="200"/>
+
+    <Button text="Зарегистрироваться" onAction="#handleRegister"/>
+    <Hyperlink text="Уже есть аккаунт? Войти" onAction="#goToLogin"/>
+</VBox>

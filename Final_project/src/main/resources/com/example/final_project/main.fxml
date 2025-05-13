@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.final_project.MainController"
+            stylesheets="@styles.css">
+    <top>
+        <HBox spacing="10">
+            <TextField fx:id="itemField" promptText="Товар" />
+            <TextField fx:id="quantityField" promptText="Кол-во" />
+            <ComboBox fx:id="categoryBox" />
+            <Button text="Добавить товар" onAction="#handleAddItem" />
+            <TextField fx:id="categoryField" promptText="Новая категория" />
+            <Button text="Добавить категорию" onAction="#handleAddCategory" />
+        </HBox>
+    </top>
+    <center>
+        <TableView fx:id="tableView">
+            <columns>
+                <TableColumn fx:id="nameColumn" text="Название" />
+                <TableColumn fx:id="quantityColumn" text="Кол-во" />
+                <TableColumn fx:id="boughtColumn" text="Куплено" />
+                <TableColumn fx:id="categoryColumn" text="Категория" />
+            </columns>
+        </TableView>
+    </center>
+    <bottom>
+        <HBox spacing="10" alignment="CENTER">
+            <Button text="Удалить товар" onAction="#handleDeleteItem" />
+            <Button text="Выйти" onAction="#handleLogout" />
+        </HBox>
+    </bottom>
+
+</BorderPane>
